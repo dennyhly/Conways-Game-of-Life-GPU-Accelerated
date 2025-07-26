@@ -1,111 +1,75 @@
-# Raylib-Quickstart
-A simple cross platform template for setting up a project with the bleeding edge raylib code.
-Works with C or C++.
+# Conway's Game of Life (C++ with GPU Acceleration)
 
-## Supported Platforms
-Quickstart supports the main 3 desktop platforms:
-* Windows
-* Linux
-* MacOS
+## Project Overview
 
-# Naming projects
-Do not name your game project 'raylib', it will conflict with the raylib library.
+This project is a C++ implementation of **Conway's Game of Life**, accelerated using the GPU, and visualized through a 2560×1440p window using **Raylib**. The goal of this project is the highlight the performance benefits available for certain algorithms when rendered on the GPU vs rendered on the CPU.
 
-# VSCode Users (all platforms)
-*Note* You must have a compiler toolchain installed in addition to vscode.
+Conway's Game of Life is a  fairly simple 2D, zero-player, grid-based simulation that models cell life and death according to four simple rules. These rules produce complex and dynamic behaviors — often mimicking the growth patterns of microbial colonies.
 
-* Download the quickstart
-* Rename the folder to your game name
-* Open the folder in VSCode
-* Run the build task ( CTRL+SHIFT+B or F5 )
-* You are good to go
+## Game Rules
 
-# Windows Users
-There are two compiler toolchains available for windows, MinGW-W64 (a free compiler using GCC), and Microsoft Visual Studio
-## Using MinGW-W64
-* Double click the `build-MinGW-W64.bat` file
-* CD into the folder in your terminal
-* run `make`
-* You are good to go
+Each cell interacts with its **8 neighboring cells** and follows these rules every generation:
 
-### Note on MinGW-64 versions
-Make sure you have a modern version of MinGW-W64 (not mingw).
-The best place to get it is from the W64devkit from
-https://github.com/skeeto/w64devkit/releases
-or the version installed with the raylib installer
-#### If you have installed raylib from the installer
-Make sure you have added the path
+1. **Underpopulation**: Any live cell with fewer than two live neighbors dies.
+2. **Survival**: Any live cell with two or three live neighbors lives on.
+3. **Overpopulation**: Any live cell with more than three live neighbors dies.
+4. **Reproduction**: Any dead cell with exactly three live neighbors becomes a live cell.
 
-`C:\raylib\w64devkit\bin`
 
-To your path environment variable so that the compiler that came with raylib can be found.
+## Features
 
-DO NOT INSTALL ANOTHER MinGW-W64 from another source such as msys2, you don't need it.
+- Full **serial CPU implementation**
+- **GPU acceleration** using OpenGL fragment shaders
+- Real-time rendering using **Raylib**
+- Support for interactive input (click to toggle cells, random initialization)
+- **Benchmark mode** to compare CPU vs GPU performance
 
-## Microsoft Visual Studio
-* Run `build-VisualStudio2022.bat`
-* double click the `.sln` file that is generated
-* develop your game
-* you are good to go
+## Implementation Details
 
-# Linux Users
-* CD into the build folder
-* run `./premake5 gmake2`
-* CD back to the root
-* run `make`
-* you are good to go
+- **Main Loop**: Handles input, updates simulation, and renders using Raylib.
+- **Simulation Class**: Coordinates the state of the game, updates grid based on rules.
+- **Grid Class**: Manages the 2D vector of cells, and provides methods for manipulation.
+- **GPU Acceleration**: Utilizes fragment shaders to offload cell-update logic onto the GPU. Results are mapped back to the CPU for accurate cell state tracking.
+- **Benchmarking**: PerformanceMonitor class and `BenchmarkResults` struct collect and report performance data over 1000 generations.
 
-# MacOS Users
-* CD into the build folder
-* run `./premake5.osx gmake2`
-* CD back to the root
-* run `make`
-* you are good to go
+## How to Run
 
-# Output files
-The built code will be in the bin dir
+- Once cloned into VSCode press **F5** to run the MakeFile and launch the executable.
+- **R** to initialize and reset the grid with a random pattern.
+- **C** to clear the grid.
+- **Spacebar** or **Enter** to pause the game.
+- **F** to increase the rendering FPS.
+- **S** to decrease the rendering FPS.
+- **Left Click** while the game is paused to switch any cell's status.
+- **B** to run Benchmark Mode.
+- **Esc** to exit out of the game.
 
-# Working directories and the resources folder
-The example uses a utility function from `path_utils.h` that will find the resources dir and set it as the current working directory. This is very useful when starting out. If you wish to manage your own working directory you can simply remove the call to the function and the header.
+## Results
+Below is a snippet from some of my benchmark results. These results show that on average there is a 10x decrease in Average Update Times (AUT) and Minimum Update Time (MUT) from switching the game logic and calculations from rendering on the GPU vs on the CPU. The Maximum Update Time stays the same due to the initializing the game on the CPU for both implementations, but can be optimized by performing the initializing on the GPU for the GPU implementation of the game logic.
 
-# Changing to C++
-Simply rename `src/main.c` to `src/main.cpp` and re-run the steps above and do a clean build.
+CPU Implementation
+| Metric                 | Value        |
+| ---------------------- | ------------ |
+| Generations Tested     | 1000         |
+| Average Update Time    | 17,759.03 μs |
+| Minimum Update Time    | 16,039.00 μs |
+| Maximum Update Time    | 22,690.00 μs |
+| Average FPS Equivalent | 56.31        |
+| Timestamp              | `1749620007` |
 
-# Using your own code
-Simply remove `src/main.c` and replace it with your code, and re-run the steps above and do a clean build.
+GPU Implementation
+| Metric                 | Value        |
+| ---------------------- | ------------ |
+| Generations Tested     | 1000         |
+| Average Update Time    | 1,778.04 μs  |
+| Minimum Update Time    | 1,487.00 μs  |
+| Maximum Update Time    | 22,366.00 μs |
+| Average FPS Equivalent | 562.42       |
+| Timestamp              | `1749620030` |
 
-# Building for other OpenGL targets
-If you need to build for a different OpenGL version than the default (OpenGL 3.3) you can specify an OpenGL version in your premake command line. Just modify the bat file or add the following to your command line
 
-## For OpenGL 1.1
-`--graphics=opengl11`
+### Prerequisites
 
-## For OpenGL 2.1
-`--graphics=opengl21`
-
-## For OpenGL 4.3
-`--graphics=opengl43`
-
-## For OpenGLES 2.0
-`--graphics=opengles2`
-
-## For OpenGLES 3.0
-`--graphics=opengles3`
-
-# License
-Copyright (c) 2020-2025 Jeffery Myers
-
-This software is provided "as-is", without any express or implied warranty. In no event 
-will the authors be held liable for any damages arising from the use of this software.
-
-Permission is granted to anyone to use this software for any purpose, including commercial 
-applications, and to alter it and redistribute it freely, subject to the following restrictions:
-
-  1. The origin of this software must not be misrepresented; you must not claim that you 
-  wrote the original software. If you use this software in a product, an acknowledgment 
-  in the product documentation would be appreciated but is not required.
-
-  2. Altered source versions must be plainly marked as such, and must not be misrepresented
-  as being the original software.
-
-  3. This notice may not be removed or altered from any source distribution.
+- **Raylib** and its dependencies installed
+- CUDA support installed (if experimenting with CUDA)
+- Proper compiler setup (MinGW for GCC or MSVC for CUDA)
