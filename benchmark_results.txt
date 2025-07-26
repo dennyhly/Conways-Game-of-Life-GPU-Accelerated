@@ -1,0 +1,238 @@
+=== CPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 5461.01 microseconds
+Minimum update time: 5084.00 microseconds
+Maximum update time: 35559.00 microseconds
+Average FPS equivalent: 183.12
+Timestamp: 1749608537
+----------------------------------------
+=== CPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 5881.23 microseconds
+Minimum update time: 5481.00 microseconds
+Maximum update time: 36154.00 microseconds
+Average FPS equivalent: 170.03
+Timestamp: 1749610986
+----------------------------------------
+=== CPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 5879.01 microseconds
+Minimum update time: 5504.00 microseconds
+Maximum update time: 37214.00 microseconds
+Average FPS equivalent: 170.10
+Timestamp: 1749611013
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 4367.25 microseconds
+Minimum update time: 4072.00 microseconds
+Maximum update time: 34236.00 microseconds
+Average FPS equivalent: 228.98
+Timestamp: 1749613087
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 5086.68 microseconds
+Minimum update time: 4682.00 microseconds
+Maximum update time: 35550.00 microseconds
+Average FPS equivalent: 196.59
+Timestamp: 1749613300
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 4583.22 microseconds
+Minimum update time: 4130.00 microseconds
+Maximum update time: 34606.00 microseconds
+Average FPS equivalent: 218.19
+Timestamp: 1749613493
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 4541.79 microseconds
+Minimum update time: 4096.00 microseconds
+Maximum update time: 34362.00 microseconds
+Average FPS equivalent: 220.18
+Timestamp: 1749613585
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 7712.33 microseconds
+Minimum update time: 4593.00 microseconds
+Maximum update time: 36743.00 microseconds
+Average FPS equivalent: 129.66
+Timestamp: 1749614404
+----------------------------------------
+=== CPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 20520.54 microseconds
+Minimum update time: 16250.00 microseconds
+Maximum update time: 31731.00 microseconds
+Average FPS equivalent: 48.73
+Timestamp: 1749614490
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 5266.38 microseconds
+Minimum update time: 4855.00 microseconds
+Maximum update time: 35227.00 microseconds
+Average FPS equivalent: 189.88
+Timestamp: 1749614521
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 5406.36 microseconds
+Minimum update time: 5025.00 microseconds
+Maximum update time: 37112.00 microseconds
+Average FPS equivalent: 184.97
+Timestamp: 1749614933
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 4737.85 microseconds
+Minimum update time: 4276.00 microseconds
+Maximum update time: 35145.00 microseconds
+Average FPS equivalent: 211.07
+Timestamp: 1749615124
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 1677.57 microseconds
+Minimum update time: 1528.00 microseconds
+Maximum update time: 12308.00 microseconds
+Average FPS equivalent: 596.10
+Timestamp: 1749615589
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 1679.28 microseconds
+Minimum update time: 1535.00 microseconds
+Maximum update time: 12135.00 microseconds
+Average FPS equivalent: 595.49
+Timestamp: 1749615792
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 1679.14 microseconds
+Minimum update time: 1530.00 microseconds
+Maximum update time: 12325.00 microseconds
+Average FPS equivalent: 595.54
+Timestamp: 1749615815
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 1684.82 microseconds
+Minimum update time: 1535.00 microseconds
+Maximum update time: 12225.00 microseconds
+Average FPS equivalent: 593.53
+Timestamp: 1749615844
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 1701.96 microseconds
+Minimum update time: 1535.00 microseconds
+Maximum update time: 12220.00 microseconds
+Average FPS equivalent: 587.56
+Timestamp: 1749615865
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 2645.00 microseconds
+Minimum update time: 2305.00 microseconds
+Maximum update time: 13733.00 microseconds
+Average FPS equivalent: 378.07
+Timestamp: 1749616343
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 1685.71 microseconds
+Minimum update time: 1526.00 microseconds
+Maximum update time: 11867.00 microseconds
+Average FPS equivalent: 593.22
+Timestamp: 1749616382
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 1747.12 microseconds
+Minimum update time: 1533.00 microseconds
+Maximum update time: 12454.00 microseconds
+Average FPS equivalent: 572.37
+Timestamp: 1749616409
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 1636.41 microseconds
+Minimum update time: 1491.00 microseconds
+Maximum update time: 15403.00 microseconds
+Average FPS equivalent: 611.09
+Timestamp: 1749616612
+----------------------------------------
+
+
+
+
+=== CPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 17759.03 microseconds
+Minimum update time: 16039.00 microseconds
+Maximum update time: 22690.00 microseconds
+Average FPS equivalent: 56.31
+Timestamp: 1749620007
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 1778.04 microseconds
+Minimum update time: 1487.00 microseconds
+Maximum update time: 22366.00 microseconds
+Average FPS equivalent: 562.42
+Timestamp: 1749620030
+----------------------------------------
+
+
+=== CPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 17813.00 microseconds
+Minimum update time: 15987.00 microseconds
+Maximum update time: 30828.00 microseconds
+Average FPS equivalent: 56.14
+Timestamp: 1749620980
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 1903.66 microseconds
+Minimum update time: 1604.00 microseconds
+Maximum update time: 13931.00 microseconds
+Average FPS equivalent: 525.30
+Timestamp: 1749620998
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 1647.94 microseconds
+Minimum update time: 1484.00 microseconds
+Maximum update time: 3811.00 microseconds
+Average FPS equivalent: 606.82
+Timestamp: 1749708299
+----------------------------------------
+=== CPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 19438.43 microseconds
+Minimum update time: 18501.00 microseconds
+Maximum update time: 26379.00 microseconds
+Average FPS equivalent: 51.44
+Timestamp: 1753490111
+----------------------------------------
+=== CPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 22024.94 microseconds
+Minimum update time: 21136.00 microseconds
+Maximum update time: 29863.00 microseconds
+Average FPS equivalent: 45.40
+Timestamp: 1753490155
+----------------------------------------
+=== GPU Implementation Performance Results ===
+Generations tested: 1000
+Average update time: 19427.50 microseconds
+Minimum update time: 1511.00 microseconds
+Maximum update time: 24723.00 microseconds
+Average FPS equivalent: 51.47
+Timestamp: 1753490197
+----------------------------------------
