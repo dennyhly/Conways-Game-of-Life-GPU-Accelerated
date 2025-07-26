@@ -6,6 +6,8 @@ This project is a C++ implementation of **Conway's Game of Life**, accelerated u
 
 Conway's Game of Life is a  fairly simple 2D, zero-player, grid-based simulation that models cell life and death according to four simple rules. These rules produce complex and dynamic behaviors — often mimicking the growth patterns of microbial colonies.
 
+<img src="./resources/Conway - R.PNG" alt="Screenshot_random" width="1080"/>
+
 ## Game Rules
 
 Each cell interacts with its **8 neighboring cells** and follows these rules every generation:
