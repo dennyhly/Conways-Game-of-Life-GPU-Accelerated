@@ -73,5 +73,4 @@ GPU Implementation
 ### Prerequisites
 
 - **Raylib** and its dependencies installed
-- CUDA support installed (if experimenting with CUDA)
 - Proper compiler setup (MinGW for GCC or MSVC for CUDA)
