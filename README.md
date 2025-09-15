@@ -72,5 +72,5 @@ GPU Implementation
 
 ### Prerequisites
 
-- **Raylib** and its dependencies installed
-- Proper compiler setup (MinGW for GCC or MSVC for CUDA)
+- **Raylib** and its dependencies installed ([Raylib](https://www.raylib.com) (zlib/libpng license) more details in RaylibLicense.md)  
+- Proper compiler setup (MinGW for GCC)
